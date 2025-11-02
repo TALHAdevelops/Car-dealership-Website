@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Motors - Premium Car Dealership</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">ELITE MOTORS</div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Discover Your Dream Car</h1>
+        <p class="hero-subtitle">
+          Premium vehicles handpicked for discerning drivers
+        </p>
+        <a href="inventory.html" class="btn btn-primary">View Inventory</a>
+      </div>
+      <div class="hero-image">
+        <img src="./images/hero-image.png" alt="" width="auto" height="90%" />
+      </div>
+    </section>
+    <!-- Company, Model, variant -->
+    <!-- Cars Section -->
+    <section class="featured-section">
+      <div class="section-header">
+        <h2>Search your Desired Vehicle</h2>
+        <p>Curated selections from our premium collection</p>
+      </div>
+      <div class="search-filters">
+        <select class="search-select" id="carCompany">
+          <option value="">Select Company</option>
+          <option value="toyota">Toyota</option>
+          <option value="honda">Honda</option>
+          <option value="bmw">BMW</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+        <select class="search-select" id="carModel">
+          <option value="">Select Model</option>
+        </select>
+        <select class="search-select" id="carVariant">
+          <option value="">Select Variant</option>
+        </select>
+        <button class="btn btn-primary" id="searchBtn">Search</button>
+      </div>
+
+      <!-- Add this container for car cards -->
+      <div class="cars-grid" id="carResults">
+        <!-- Cars will be dynamically added here -->
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="benefits-section">
+      <h2>Why Choose Elite Motors</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">✓</div>
+          <h3>Certified Quality</h3>
+          <p>All vehicles undergo rigorous inspection and certification</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">✓</div>
+          <h3>Competitive Pricing</h3>
+          <p>Best prices in the market with flexible financing options</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">✓</div>
+          <h3>Expert Support</h3>
+          <p>Dedicated team to help you find the perfect vehicle</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">✓</div>
+          <h3>Trade-In Available</h3>
+          <p>Get the best value for your current vehicle</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <h2>Get in Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p><strong>Email:</strong> sales@elitemotors.com</p>
+          <p>
+            <strong>Address:</strong> 123 Auto Boulevard, Motor City, MC 12345
+          </p>
+          <p><strong>Hours:</strong> Mon-Sat 9AM-6PM, Sun 10AM-5PM</p>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Elite Motors</h4>
+          <p>Your trusted partner in finding the perfect vehicle.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Elite Motors. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
