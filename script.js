@@ -32,17 +32,17 @@ const carData = {
         EX: "$26,545",
         Touring: "$30,545",
       },
-      image: "./images/civic.jpg",
+      image: "./images/civic.png",
     },
     accord: {
-      variants: ["LX", "Sport", "EX-L", "Touring"],
+      variants: ["LX", "Sport", "EX_L", "Touring"],
       prices: {
         LX: "$28,390",
         Sport: "$31,890",
         EX_L: "$33,540",
         Touring: "$38,540",
       },
-      image: "./images/accord.jpg",
+      image: "./images/accord.png",
     },
   },
 
@@ -54,7 +54,7 @@ const carData = {
         "330e": "$45,600",
         "M340i": "$57,600",
       },
-      image: "./images/3series.jpg",
+      image: "./images/3.png",
     },
     series5: {
       variants: ["530i", "540i", "M550i"],
@@ -63,28 +63,28 @@ const carData = {
         "540i": "$62,700",
         "M550i": "$80,200",
       },
-      image: "./images/5series.jpg",
+      image: "./images/5.png",
     },
   },
 
   audi: {
     a4: {
-      variants: ["Premium", "Premium Plus", "Prestige"],
+      variants: ["Premium", "PremiumPlus", "Prestige"],
       prices: {
         Premium: "$41,200",
         PremiumPlus: "$46,300",
         Prestige: "$51,300",
       },
-      image: "./images/a4.jpg",
+      image: "./images/a4.png",
     },
     a6: {
-      variants: ["Premium", "Premium Plus", "Prestige"],
+      variants: ["Premium", "PremiumPlus", "Prestige"],
       prices: {
         Premium: "$56,800",
         PremiumPlus: "$60,900",
         Prestige: "$69,200",
       },
-      image: "./images/a6.jpg",
+      image: "./images/a6.png",
     },
   },
 
@@ -96,7 +96,7 @@ const carData = {
         "C300 4Matic": "$48,950",
         "AMG C43": "$60,500",
       },
-      image: "./images/cclass.jpg",
+      image: "./images/C.png",
     },
     eClass: {
       variants: ["E350", "E350 4Matic", "AMG E53"],
@@ -105,7 +105,7 @@ const carData = {
         "E350 4Matic": "$58,750",
         "AMG E53": "$79,800",
       },
-      image: "./images/eclass.jpg",
+      image: "./images/E.png",
     },
   },
 };
@@ -171,7 +171,7 @@ function displayCar() {
             <div class="car-image">
                 <img src="${
                   carInfo.image || "placeholder.jpg"
-                }" alt="${company} ${model}" width="300" height="200">
+                }" alt="${company} ${model}"height="100">
             </div>
             <div class="car-info">
                 <span class="car-year">2025</span>
